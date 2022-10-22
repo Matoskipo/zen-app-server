@@ -2,11 +2,10 @@
   "name": "serve",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "start": "node ./bin/www",
     "dev": "ts-node-dev --respawn ./bin/www",
-    "compile": "tsc -w",
+    "compile": "rimraf tsc -w",
     "nodemon": "nodemon ./bin/www"
   },
   "dependencies": {
@@ -25,6 +24,7 @@
     "nodemailer": "^6.7.8",
     "nodemon": "^2.0.19",
     "path": "^0.12.7",
+    "rimraf": "^3.0.2",
     "socket.io": "^4.5.2",
     "sqlite3": "^5.0.11",
     "typescript": "^4.7.4",
