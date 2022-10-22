@@ -23,6 +23,9 @@ initDatabase();
 
 
 app.use(express.json());
+app.get('/', (req, res)=>{
+   res.end('startd')
+})
 app.use('/users', userRouter);
 app.use('/notes', notesRouter);
 app.use('/chats', chatsRouter);
